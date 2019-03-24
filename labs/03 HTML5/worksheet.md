@@ -1,4 +1,4 @@
-# HTML5
+# HTML5 lol
 
 In this lab you learn the basics of HTML5 (Hypertext Markup Language), which is the language for describing the structure and content of a web page.
 
