@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, Verdana, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+figure figcaption {
+    text-align: center;
+}
+}
+p.zero {
+    border: 1px solid black;
+    padding: 3em;
+    margin:  1em;
+    margin-bottom: 0em;
+    text-align: center;
+}
+p.one {
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 0px 300px 0px 300px;
+    background-color: lightblue;
+    padding: 30px;
+}
+
+p.two {
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 0px 300px 0px 300px;
+    background-color: lightblue;
+    padding: 30px;
+}
+p.three {
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 0px 300px 0px 300px;
+    background-color: lightblue;
+    padding: 30px;
+}
+p.four {
+    border: 5px solid black;
+    border-style: dashed;
+    border-color: red;
+    border-radius: 1em;
+    text-align: center;
+}
+img {
+    border:2px solid rgb(100, 144, 214);
+    img-align: center;
+}
+a {
+    font-weight: bold
+}
