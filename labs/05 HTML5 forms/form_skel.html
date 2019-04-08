@@ -1,63 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-	<!--
-	This page demonstrates a form.
-	-->
-	<head>
-		<meta charset="utf-8"/>
-		<title>Demonstrating HTML forms</title>
-	</head>
-	
-	<body>
-		<h1>Turnitin</h1>
-		<form  lang="fi" action="">
-			<div>
-				Name: <input type="text" name="studentname"/>
-			</div>
-			<div>
-				Student id: <input type="text" name="id"  />
-			</div>
-			<div>
-				Email:
-				<!--
-				Make an input named "email"
-				-->
-			</div>
-			<div>
-				Assignment:
-				<!--
-				Make an input named "assignment"
-				-->
-				
-			</div>
+<!--
+This page demonstrates a form.
+-->
+<head>
+	<meta charset="utf-8"/>
+	<title>Demonstrating HTML forms</title>
+	<link href="css/form.css" type="text/css" rel="stylesheet" />
+</head>
 
-			<div>
-				Code:
-				<!--
-				Make an input named "code" which is a text area to put student's code into.
-				-->
-				
-			</div>
-			<div>
-				Cheat:
+<body>
+<h1>Turnitin</h1>
+<form  lang="fi" action="">
+	<fieldset>
+		<legend>Personal info:</legend>
+	<div>
+		Name: <input type="text" name="studentname" placeholder="First name"/>
+	</div>
+	<div>
+		Student id: <input type="text" name="id"  required placeholder="Student id"/>
+	</div>
+	<div>
+		Email:
+		<!--
+        Make an input named "email"
+        -->
+		<input type="text" name="email"  placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">/>
+
+	</div>
+	</fieldset>
+	<fieldset>
+		<legend>Additional info:</legend>
+	<div>
+		Assignment:
+		<!--
+        Make an input named "assignment"
+        -->
+		<input type="text" name="assignment" placeholder="Name of assignment" />
+
+
+	</div>
+
+	<div>
+		Code:
+		<!--
+        Make an input named "code" which is a text area to put student's code into.
+        -->
+		<input type="text" name="code" placeholder="Code" />
+
+
+	</div>
+	<div>
+		<label>Cheat:
 			<!--
 				Make an input named "cheat" which is a check box the student must check.
 			-->
-			</div>
-			<div>
-				Pay:
+			<input type="checkbox" name="cheat" /></label>
+
+	</div>
+	<div>
+		<label>Pay:
 			<!--
 				Make an input named "payment" which is a radio box with possible values of visa, paypal, mastercard
 			-->
-			</div>
-			<div>
-				Score:
-			<!--
-				Make an input named "score" which is a list of choices for the score 
-			-->
-			</div>
-			<input type="submit" />
-		</form>
-		<a href="http://jigsaw.w3.org/css-validator/check/referer">Validate</a>
-	</body>
+			<input type="radio" name="payment" /></label>
+		<select name="example">
+			<option value="notknown">Not selected</option>
+			<option value="Visa">Visa</option>
+			<option value="PayPal">PayPal</option>
+			<option value="MasterCard">MasterCard</option>
+		</select>
+
+	</div>
+	<div>
+		Score:
+		<!--
+            Make an input named "score" which is a list of choices for the score
+        -->
+		<input type="number" name="score" />
+
+	</div>
+	</fieldset>
+	<input type="submit" />
+</form>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">Validate</a>
+</body>
 </html>

@@ -1,0 +1,30 @@
+selector {
+    property : value;
+....
+}
+input[type="text"] {
+    color : blue;
+    width: 200px;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="number"] {
+    color: blue;
+    width: 200px;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    font-weight : bold;
+    background-color: rgb(83, 66, 244);
+    color: white;
+}
